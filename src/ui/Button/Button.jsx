@@ -2,7 +2,7 @@ import React from 'react'
 import Proptypes from 'prop-types'
 import './Button.scss'
 import classNames from 'classnames'
-import IconCart from '../../../assets/icons/icon-cart.svg'
+import IconCart from '../../assets/icons/icon-cart.svg'
 
 const Button = ({ label, action, type, cart }) => (
   <button

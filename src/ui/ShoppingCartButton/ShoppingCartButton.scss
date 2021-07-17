@@ -1,17 +1,18 @@
-@import '../../../sass/index.scss';
+@import '../../sass/index.scss';
 
 .a-header__shoppingCartButton {
   position: relative;
-  width: 3.2em;
-  height: 3.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.5em;
+  height: 3.5em;
   button {
     background: none;
     border: none;
-
     svg {
-      padding: 0.8em 1em;
-      width: 3em;
-      height: 3em;
+      width: 3.5em;
+      height: 3.5em;
     }
   }
   .burble {
