@@ -1,0 +1,42 @@
+@import '../../../sass/index.scss';
+
+.a-header__shoppingCartButton {
+  position: relative;
+  width: 3.2em;
+  height: 3.2em;
+  button {
+    background: none;
+    border: none;
+
+    svg {
+      padding: 0.8em 1em;
+      width: 3em;
+      height: 3em;
+    }
+  }
+  .burble {
+    display: flex;
+    position: absolute;
+    background: $purple;
+    width: 1.5em;
+    height: 1.5em;
+    border-radius: 50%;
+    top: 0em;
+    left: 3em;
+    top: 0.6em;
+    justify-content: center;
+    align-items: center;
+    span {
+      font-size: 1em;
+      font-weight: bold;
+      color: $white;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .a-header__shoppingCartButton {
+    width: 2em;
+    height: 2em;
+  }
+}
