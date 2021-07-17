@@ -48,6 +48,21 @@ module.exports = {
                 test: /\.(png|jpg)$/,
                 type: 'asset/resource'
             },
+            {
+                test: /\.svg$/,
+                use: [
+                  {
+                    loader: 'babel-loader',
+                    options: {
+                      presets: ['@babel/preset-react', '@babel/preset-env']
+                    }
+                  },
+                  {
+                    loader: '@svgr/webpack',
+                    options: { babel: false }
+                  }
+                ]
+              }
         ]
     },
     plugins: [
