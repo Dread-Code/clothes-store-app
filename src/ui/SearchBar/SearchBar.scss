@@ -1,0 +1,49 @@
+@import '../../../sass/index.scss';
+
+.a-header__SearchBar {
+  display: flex;
+  input {
+    font-size: 1.6em;
+    font-weight: lighter;
+    background: #eeeeee;
+    width: 26.2em;
+    border: none;
+
+    &::placeholder {
+      padding-left: 0.8em;
+      font-weight: lighter;
+      color: #6b6b6b;
+    }
+  }
+
+  button {
+    background: #dedede;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .searchIcon {
+      padding: 1em 1em;
+      width: 2em;
+      height: 2em;
+    }
+  }
+}
+
+@media (max-width: 575px) {
+  .a-header__SearchBar {
+    input {
+      height: 2em;
+      width: 19em;
+      font-size: 1.2em;
+    }
+
+    button {
+      .searchIcon {
+        padding: 0.2em 0.4em;
+        width: 2em;
+        height: 2em;
+      }
+    }
+  }
+}
