@@ -1,0 +1,33 @@
+@import '../../../sass/index.scss';
+
+.a-core {
+  &__button {
+    display: flex;
+    font-family: Helvetica;
+    opacity: 1;
+    padding: 0.5em 1.1em;
+    font-size: 1.123em;
+
+    &-secondary {
+      background: $white;
+      border: 1px solid $black;
+    }
+
+    &-primary {
+      background: $black;
+      border: none;
+      svg {
+        margin-right: 0.3em;
+        width: 1.3em;
+        height: 1.3em;
+        path {
+          fill: $white;
+        }
+      }
+
+      span {
+        color: $white;
+      }
+    }
+  }
+}
