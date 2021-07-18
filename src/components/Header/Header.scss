@@ -32,21 +32,28 @@
 @media (max-width: 580px) {
   .header {
     display: grid;
-    grid-template-columns: 3em 7em 2em;
+    grid-template-columns: 0.4fr 1fr 0.4fr;
     grid-template-rows: auto auto;
     grid-template-areas:
       'hamburger icon cart'
       'search search search';
     justify-content: center;
+    grid-gap: 0.2em 1em;
 
     .hamburger-menu {
       display: inline-block !important;
       grid-area: hamburger;
       font-size: 2.5em;
+      &:focus {
+        outline: none !important;
+      }
+      &:focus-within {
+        outline: none !important;
+      }
     }
     .icon {
       grid-area: icon;
-      width: 6em;
+      width: 13em;
     }
     .buttons-container {
       .userIcon {
@@ -56,7 +63,7 @@
         display: none;
       }
       grid-area: cart;
-      width: 1em;
+      width: 3em;
     }
     .a-header__SearchBar {
       grid-area: search;

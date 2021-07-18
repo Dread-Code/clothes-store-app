@@ -1,1 +1,21 @@
+.router-container {
+  .mobilenavbar-container {
+    display: none;
+  }
+}
 
+@media (max-width: 580px) {
+  .router-container {
+    display: grid;
+    grid-template-rows: 0.3fr 0.2fr;
+    justify-content: center;
+    align-content: start;
+  }
+
+  .mobilenavbar-container {
+    display: inline-block !important;
+  }
+  .navbar-container {
+    display: none;
+  }
+}

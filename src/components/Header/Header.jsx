@@ -1,14 +1,15 @@
 import React from 'react'
+import PropTypes from 'prop-types'
+import { GiHamburgerMenu } from 'react-icons/gi'
 import Button from '../../ui/Button'
 import SearchBar from '../../ui/SearchBar/SearchBar'
 import UserIcon from '../../assets/icons/icon-user.svg'
 import ShoppingCartButton from '../../ui/ShoppingCartButton/ShoppingCartIcon'
-import { GiHamburgerMenu } from 'react-icons/gi'
 import './Header.scss'
 
-const Header = () => (
+const Header = ({ handlerClick }) => (
   <header className="header">
-    <span className="hamburger-menu">
+    <span role="button" tabIndex={0} className="hamburger-menu" onClick={handlerClick}>
       <GiHamburgerMenu />
     </span>
     <img
@@ -25,4 +26,7 @@ const Header = () => (
   </header>
 )
 
+Header.propTypes = {
+  handlerClick: PropTypes.func.isRequired
+}
 export default Header
