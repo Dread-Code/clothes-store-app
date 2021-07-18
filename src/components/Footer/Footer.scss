@@ -1,0 +1,52 @@
+.footer-container {
+  display: grid;
+  grid-template-rows: 1fr 4em;
+  background: black;
+  .information-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    div {
+      color: white;
+      justify-self: center;
+      font-family: Helvetica;
+
+      h4 {
+        margin: 1em 1em 1em 0 !important;
+        font-size: 2em;
+        margin: 0.7em;
+      }
+      ul {
+        padding: 0;
+        li {
+          list-style: none;
+          font-size: 1.5em;
+        }
+      }
+      &.social {
+        width: 20em;
+        .icons {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+    }
+  }
+  .copyrigth-container {
+    color: white;
+    height: 2em;
+    display: flex;
+    flex-direction: column;
+    hr {
+      width: 95%;
+    }
+    .copyrigth {
+      font-family: Helvetica;
+      font-weight: normal;
+      font-size: 1.5em;
+      justify-self: center;
+      align-self: center;
+    }
+  }
+}
