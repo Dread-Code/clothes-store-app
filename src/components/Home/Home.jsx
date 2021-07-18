@@ -1,9 +1,11 @@
 import React from 'react'
+import ImageSlider from '../../ui/ImageSlider/ImageSlider'
+import { sliderData } from '../../utils/sliderData'
 
 const Home = () => {
   return (
     <div>
-      <h1>Home...</h1>
+      <ImageSlider slides={sliderData} />
     </div>
   )
 }
