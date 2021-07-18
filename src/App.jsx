@@ -4,14 +4,12 @@ import { HashRouter as Router } from 'react-router-dom'
 import AppRouter from './router/AppRouter'
 import Header from './components/Header'
 
-const App = () => {
-  return (
-    <Router>
-      <AppRouter>
-        <Header />
-      </AppRouter>
-    </Router>
-  )
-}
+const App = () => (
+  <Router>
+    <AppRouter>
+      <Header />
+    </AppRouter>
+  </Router>
+)
 
 export default hot(App)
