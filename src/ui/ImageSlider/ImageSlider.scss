@@ -52,12 +52,15 @@
 @media (max-width: 580px) {
   .slider {
     margin-top: 3em;
+    margin-bottom: 3em;
+
     img {
       width: 200%;
       height: 75%;
     }
     .right-arrow {
       font-size: 2rem;
+      right: 0em;
     }
     .left-arrow {
       font-size: 2rem;
