@@ -11,8 +11,14 @@ const Home = () => (
   <section className="home-container">
     <ImageSlider slides={sliderData} />
     <Publication data={publicationsData} />
-    <div>
-      <Card />
+    <div className="card-slider-container">
+      <h3 className="title">PRODUCTOS MÁS BUSCADOS</h3>
+      <div className="card-slider">
+        <Card />
+        <Card />
+        <Card />
+        <Card />
+      </div>
     </div>
     <Footer />
   </section>
