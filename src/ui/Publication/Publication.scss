@@ -1,0 +1,23 @@
+.images-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3em;
+  padding: 0 4em;
+  .image {
+    background-size: cover;
+    background-position: center;
+    height: 45em;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    // align-content: end;
+    h3 {
+      font-size: 5em;
+      margin: 0;
+      align-self: flex-end;
+      padding: 1em;
+      color: #ffffff;
+      text-shadow: 4px 2px 5px #000000b8;
+    }
+  }
+}

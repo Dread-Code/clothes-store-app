@@ -1,15 +1,21 @@
 import React from 'react'
 import Card from '../../ui/Card/Card'
 import ImageSlider from '../../ui/ImageSlider/ImageSlider'
+import Publication from '../../ui/Publication'
+import { publicationsData } from '../../utils/publicationsData'
 import { sliderData } from '../../utils/sliderData'
 import Footer from '../Footer'
+import './Home.scss'
 
 const Home = () => (
-  <div>
+  <section className="home-container">
     <ImageSlider slides={sliderData} />
-    <Card />
+    <Publication data={publicationsData} />
+    <div>
+      <Card />
+    </div>
     <Footer />
-  </div>
+  </section>
 )
 
 export default Home
