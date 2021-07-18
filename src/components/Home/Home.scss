@@ -16,3 +16,18 @@
     }
   }
 }
+
+@media (max-width: 580px) {
+  .home-container {
+    .card-slider-container {
+      .title {
+        font-size: 1.3em;
+        margin-left: 2em;
+      }
+      .card-slider {
+        width: 50;
+        margin-bottom: 0;
+      }
+    }
+  }
+}

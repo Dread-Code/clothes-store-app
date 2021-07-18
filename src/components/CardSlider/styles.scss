@@ -35,3 +35,15 @@
 .swiper-button-prev {
   color: #aeaea9;
 }
+
+@media (max-width: 580px) {
+  .swiper-container {
+    height: 45em;
+    padding: 0;
+    margin: 0;
+  }
+  .swiper-slide {
+    margin-left: 1.4em;
+    height: 45em;
+  }
+}

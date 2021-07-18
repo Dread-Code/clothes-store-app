@@ -17,7 +17,6 @@ const Home = () => (
         <CardSliderer />
       </div>
     </div>
-    <Footer />
   </section>
 )
 
