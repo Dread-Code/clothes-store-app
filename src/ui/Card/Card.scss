@@ -1,13 +1,17 @@
 .card {
   display: grid;
   position: relative;
-  width: 22em;
-  height: 36.6em;
+  width: 22em !important;
+  height: 36.6em !important;
   background-color: #f4f4f4 0% 0% no-repeat padding-box;
   border: 1px solid #e6e6e6;
-  img {
-    margin-top: 1em;
-    justify-self: center;
+  .discount {
+    position: absolute;
+  }
+  .card-image {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .card-content {
     position: absolute;
@@ -16,9 +20,10 @@
     padding: 0.4em 1.9em;
     align-self: end;
     font-family: helvetica;
-    h3 {
+    .card-title {
       font-size: 1.5em;
       font-weight: normal;
+      text-align: start;
       margin: 0.4em;
     }
     div {
