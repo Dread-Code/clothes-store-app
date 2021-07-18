@@ -32,7 +32,7 @@
 @media (max-width: 580px) {
   .header {
     display: grid;
-    grid-template-columns: 0.4fr 1fr 0.4fr;
+    grid-template-columns: 4em 17em 6em;
     grid-template-rows: auto auto;
     grid-template-areas:
       'hamburger icon cart'
@@ -43,7 +43,7 @@
     .hamburger-menu {
       display: inline-block !important;
       grid-area: hamburger;
-      font-size: 2.5em;
+      font-size: 4em;
       &:focus {
         outline: none !important;
       }
@@ -53,7 +53,7 @@
     }
     .icon {
       grid-area: icon;
-      width: 13em;
+      width: 17em;
     }
     .buttons-container {
       .userIcon {
