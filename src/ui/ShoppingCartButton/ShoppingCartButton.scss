@@ -35,9 +35,13 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 580px) {
   .a-header__shoppingCartButton {
-    width: 2em;
-    height: 2em;
+    button {
+      svg {
+        width: 2.5em;
+        height: 2.5em;
+      }
+    }
   }
 }

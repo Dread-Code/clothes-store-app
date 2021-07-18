@@ -4,9 +4,14 @@
   height: 1em;
   justify-content: center;
   align-items: center;
-  grid-gap: 1em;
+  // grid-gap: 1em;
   padding: 0.9em;
 
+  .hamburger-menu {
+    font-size: 4em;
+    // margin: 0;
+    display: none;
+  }
   .icon {
     align-self: center;
     margin-bottom: 1em;
@@ -16,24 +21,46 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    // grid-template-columns: repeat(3,1fr);
-
-    // button{
-    //     justify-self: start;
-    //     align-self: start;
-    // }
-
     .userIcon {
       justify-self: flex-start;
       height: 2.5em;
       width: 2.5em;
     }
-    .login-button {
-      justify-self: flex-start;
-    }
+  }
+}
 
-    // .shooping-cart{
-    //     align-self: start;
-    // }
+@media (max-width: 580px) {
+  .header {
+    display: grid;
+    grid-template-columns: 3em 7em 2em;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      'hamburger icon cart'
+      'search search search';
+    justify-content: center;
+
+    .hamburger-menu {
+      display: inline-block !important;
+      grid-area: hamburger;
+      font-size: 2.5em;
+    }
+    .icon {
+      grid-area: icon;
+      width: 6em;
+    }
+    .buttons-container {
+      .userIcon {
+        display: none;
+      }
+      .a-core__button-secondary {
+        display: none;
+      }
+      grid-area: cart;
+      width: 1em;
+    }
+    .a-header__SearchBar {
+      grid-area: search;
+      justify-self: start;
+    }
   }
 }

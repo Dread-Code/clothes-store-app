@@ -6,7 +6,7 @@
     font-size: 1.6em;
     font-weight: lighter;
     background: #eeeeee;
-    width: 26.2em;
+    width: 29.2em;
     border: none;
 
     &::placeholder {
@@ -21,7 +21,7 @@
     border: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     .searchIcon {
       padding: 1em 1em;
       width: 2em;
@@ -30,19 +30,19 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 580px) {
   .a-header__SearchBar {
     input {
-      height: 2em;
-      width: 19em;
-      font-size: 1.2em;
+      height: 1.2em;
+      width: 9.5em;
+      font-size: 1em;
     }
 
     button {
       .searchIcon {
         padding: 0.2em 0.4em;
-        width: 2em;
-        height: 2em;
+        width: 1em;
+        height: 1em;
       }
     }
   }
