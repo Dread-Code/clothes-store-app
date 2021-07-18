@@ -50,3 +50,36 @@
     }
   }
 }
+
+@media (max-width: 580px) {
+  .footer-container {
+    width: 100vw;
+    .information-container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      justify-self: start;
+      margin-left: 25%;
+      div {
+        justify-self: start;
+        &.social {
+          width: 20em;
+          .icons {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+          }
+        }
+      }
+    }
+    .copyrigth-container {
+      height: 3em;
+      hr {
+        width: 95%;
+      }
+      .copyrigth {
+        margin: 0.5em;
+        font-size: 1.2em;
+      }
+    }
+  }
+}

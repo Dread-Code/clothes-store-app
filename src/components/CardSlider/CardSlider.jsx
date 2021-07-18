@@ -9,7 +9,7 @@ SwiperCore.use([Navigation])
 export default function App() {
   return (
     <>
-      <Swiper navigation={true} className="mySwiper" spaceBetween={20} slidesPerView={4}>
+      <Swiper navigation={true} className="mySwiper" spaceBetween={20} slidesPerView={1}>
         <SwiperSlide>
           <Card />
         </SwiperSlide>
