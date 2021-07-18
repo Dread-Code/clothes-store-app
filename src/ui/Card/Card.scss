@@ -1,0 +1,47 @@
+.card {
+  display: grid;
+  position: relative;
+  width: 22em;
+  height: 36.6em;
+  background-color: #f4f4f4 0% 0% no-repeat padding-box;
+  border: 1px solid #e6e6e6;
+  img {
+    margin-top: 1em;
+    justify-self: center;
+  }
+  .card-content {
+    position: absolute;
+    background-color: #e6e6e6;
+    height: 12.4em;
+    padding: 0.4em 1.9em;
+    align-self: end;
+    font-family: helvetica;
+    h3 {
+      font-size: 1.5em;
+      font-weight: normal;
+      margin: 0.4em;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1em;
+      .price {
+        &-primary {
+          font-size: 1.5em;
+          color: #5b17aa;
+          font-weight: bold;
+          text-align: right;
+        }
+        &-secondary {
+          font-size: 1.5em;
+          text-decoration: line-through;
+          font-weight: lighter;
+          color: #6b6b6b;
+        }
+      }
+    }
+    button {
+      width: 100%;
+    }
+  }
+}

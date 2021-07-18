@@ -7,6 +7,7 @@
     opacity: 1;
     padding: 0.5em 1.1em;
     font-size: 1.123em;
+    justify-content: center;
 
     &-secondary {
       background: $white;
@@ -16,6 +17,7 @@
     &-primary {
       background: $black;
       border: none;
+      padding: 0.8em;
       svg {
         margin-right: 0.3em;
         width: 1.3em;
