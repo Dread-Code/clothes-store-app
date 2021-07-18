@@ -3,7 +3,6 @@ import ImageSlider from '../../ui/ImageSlider/ImageSlider'
 import Publication from '../../ui/Publication'
 import { publicationsData } from '../../utils/publicationsData'
 import { sliderData } from '../../utils/sliderData'
-import Footer from '../Footer'
 import CardSliderer from '../CardSlider'
 import './Home.scss'
 
