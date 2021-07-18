@@ -1,0 +1,20 @@
+@import '../../sass/index.scss';
+.navbar-container {
+  margin-top: 6em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  padding: 1.3em;
+  div {
+    margin-left: 2em;
+    margin-right: 2em;
+    a {
+      font-family: Helvetica, sans-serif;
+      font-weight: bold;
+      color: $white;
+      font-size: 1.8em;
+      text-decoration: none;
+    }
+  }
+}
