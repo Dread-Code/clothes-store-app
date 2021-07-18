@@ -49,8 +49,9 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 580px) {
   .slider {
+    margin-top: 3em;
     img {
       width: 200%;
       height: 75%;
@@ -63,18 +64,3 @@
     }
   }
 }
-
-// @media (max-width: 768px) {
-//   img {
-//     width: 100%;
-//     height: 75%;
-//   }
-//   .slider {
-//     .right-arrow {
-//       font-size: 4rem;
-//     }
-//     .left-arrow {
-//       font-size: 4rem;
-//     }
-//   }
-// }
