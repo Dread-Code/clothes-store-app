@@ -1,10 +1,10 @@
-import Image1 from '../assets/images/banner-principal-desktop.png'
-
 export const sliderData = [
   {
-    image: Image1
+    image:
+      'https://user-images.githubusercontent.com/60331479/126054102-2f7d929e-81df-4ff9-9ec8-184c0d1ce137.png'
   },
   {
-    image: Image1
+    image:
+      'https://user-images.githubusercontent.com/60331479/126054102-2f7d929e-81df-4ff9-9ec8-184c0d1ce137.png'
   }
 ]
