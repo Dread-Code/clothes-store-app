@@ -11,6 +11,7 @@ import Child from '../../layouts/Child'
 import Junior from '../../layouts/Junior'
 import Men from '../../layouts/Men'
 import Offers from '../../layouts/Offers'
+import Search from '../../layouts/Search/Search'
 import Women from '../../layouts/Women'
 import getProductos from '../../services/getProducts'
 import './AppRouter.scss'
@@ -38,6 +39,7 @@ const RouterApp = () => {
               <Route path="/men" component={Women} />
               <Route path="/junior" component={Junior} />
               <Route path="/offers" component={Offers} />
+              <Route path="/search" component={Search} />
               <Route path="/" component={Home} />
             </Switch>
           </div>
