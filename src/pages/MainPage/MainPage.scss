@@ -1,0 +1,27 @@
+.router-container {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  background: white;
+  .mobilenavbar-container {
+    display: none;
+  }
+}
+
+@media (max-width: 580px) {
+  .router-container {
+    display: grid;
+    grid-template-rows: 0.3fr 0.2fr;
+    justify-content: center;
+    align-content: start;
+  }
+
+  .mobilenavbar-container {
+    display: inline-block !important;
+  }
+  .navbar-container {
+    display: none;
+  }
+}
