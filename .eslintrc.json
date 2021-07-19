@@ -26,7 +26,7 @@
         "comma-dangle": ["off", "never"],
         "import/prefer-default-export": "off",
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
-        "indent": [2, 2],
+        "indent": [2],
         "react/jsx-props-no-spreading": "off",
         "react/no-unescaped-entities": 0,
         "import/no-extraneous-dependencies": "off",
