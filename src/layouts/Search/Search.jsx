@@ -26,7 +26,7 @@ const Search = () => {
       <div className="card-container">
         {setSearchResult &&
           searchResult.map(({ id, price, nameProduct, imageUrl }) => (
-            <Card key={id} price={price} nameProduct={nameProduct} imageUrl={imageUrl} />
+            <Card key={id} price={price} nameProduct={nameProduct} imageUrl={imageUrl} id={id} />
           ))}
       </div>
     </div>

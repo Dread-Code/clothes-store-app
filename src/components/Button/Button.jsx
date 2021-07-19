@@ -4,14 +4,14 @@ import './Button.scss'
 import classNames from 'classnames'
 import IconCart from '../../assets/icons/icon-cart.svg'
 
-const Button = ({ label, action, type, cart }) => (
+const Button = ({ label, onClick, type, cart }) => (
   <button
     type="button"
     className={classNames('a-core', {
       'a-core__button': true,
       [`a-core__button${type}`]: type
     })}
-    onClick={action}
+    onClick={onClick}
   >
     {cart && <IconCart />}
     <span>{label}</span>
@@ -20,7 +20,7 @@ const Button = ({ label, action, type, cart }) => (
 
 Button.propTypes = {
   label: Proptypes.string.isRequired,
-  action: Proptypes.func.isRequired,
+  onClick: Proptypes.func.isRequired,
   type: Proptypes.string,
   cart: Proptypes.bool
 }
