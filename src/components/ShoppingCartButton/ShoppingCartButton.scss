@@ -11,8 +11,8 @@
     background: none;
     border: none;
     svg {
-      width: 3.5em;
-      height: 3.5em;
+      width: 4em;
+      height: 4em;
     }
   }
   .burble {
@@ -22,26 +22,14 @@
     width: 1.5em;
     height: 1.5em;
     border-radius: 50%;
+    left: 2.3em;
     top: 0em;
-    left: 3em;
-    top: 0.6em;
     justify-content: center;
     align-items: center;
     span {
       font-size: 1em;
       font-weight: bold;
       color: $white;
-    }
-  }
-}
-
-@media (max-width: 580px) {
-  .a-header__shoppingCartButton {
-    button {
-      svg {
-        width: 2.5em;
-        height: 2.5em;
-      }
     }
   }
 }
