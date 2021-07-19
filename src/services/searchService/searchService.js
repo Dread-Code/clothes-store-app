@@ -1,9 +1,9 @@
 import axios from 'axios'
-import { BASE_URL } from '../constants/servicesConstans'
+import { BASE_URL } from '../../constants/servicesConstans'
 
 const searchService = async query => {
   try {
-    const { data } = await axios.get(`${BASE_URL}/?q=${query}`)
+    const { data } = await axios.get(`${BASE_URL}/shop/?q=${query}`)
     return data
   } catch (error) {
     console.log(error)
