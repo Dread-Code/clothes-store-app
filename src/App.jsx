@@ -1,15 +1,17 @@
 import React from 'react'
 import { hot } from 'react-hot-loader/root'
+import { Provider } from 'react-redux'
 import { HashRouter as Router } from 'react-router-dom'
+import store from './redux/store'
+
 import AppRouter from './router/AppRouter'
-import Header from './components/Header'
 
 const App = () => (
-  <Router>
-    <AppRouter>
-      <Header />
-    </AppRouter>
-  </Router>
+  <Provider store={store}>
+    <Router>
+      <AppRouter />
+    </Router>
+  </Provider>
 )
 
 export default hot(App)

@@ -1,10 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { GiHamburgerMenu } from 'react-icons/gi'
-import Button from '../../ui/Button'
-import SearchBar from '../../ui/SearchBar/SearchBar'
+import Button from '../Button'
+import SearchBar from '../SearchBar'
 import UserIcon from '../../assets/icons/icon-user.svg'
-import ShoppingCartButton from '../../ui/ShoppingCartButton/ShoppingCartIcon'
+import ShoppingCartButton from '../ShoppingCartButton/ShoppingCartIcon'
 import './Header.scss'
 
 const Header = ({ handlerClick }) => (

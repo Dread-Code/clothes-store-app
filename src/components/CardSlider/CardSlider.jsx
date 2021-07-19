@@ -1,7 +1,7 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, { Navigation } from 'swiper/core'
-import Card from '../../ui/Card'
+import Card from '../Card'
 import './styles.scss'
 
 SwiperCore.use([Navigation])

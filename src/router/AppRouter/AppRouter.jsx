@@ -12,12 +12,14 @@ import Junior from '../../layouts/Junior'
 import Men from '../../layouts/Men'
 import Offers from '../../layouts/Offers'
 import Women from '../../layouts/Women'
+import getProductos from '../../services/getProducts'
 import './AppRouter.scss'
 
 const RouterApp = () => {
   const [navBarAction, setNavBarAction] = useState(false)
   const handlerClick = () => {
     setNavBarAction(!navBarAction)
+    getProductos()
   }
   return (
     <>

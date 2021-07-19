@@ -1,6 +1,6 @@
 import React from 'react'
-import ImageSlider from '../../ui/ImageSlider/ImageSlider'
-import Publication from '../../ui/Publication'
+import ImageSlider from '../ImageSlider/ImageSlider'
+import Publication from '../Publication'
 import { publicationsData } from '../../utils/publicationsData'
 import { sliderData } from '../../utils/sliderData'
 import CardSliderer from '../CardSlider'
