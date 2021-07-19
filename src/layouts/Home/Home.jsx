@@ -1,9 +1,9 @@
 import React from 'react'
-import ImageSlider from '../ImageSlider/ImageSlider'
-import Publication from '../Publication'
+import ImageSlider from '../../components/ImageSlider'
+import Publication from '../../components/Publication'
 import { publicationsData } from '../../utils/publicationsData'
 import { sliderData } from '../../utils/sliderData'
-import CardSliderer from '../CardSlider'
+import CardSliderer from '../../components/CardSlider'
 import './Home.scss'
 
 const Home = () => (
