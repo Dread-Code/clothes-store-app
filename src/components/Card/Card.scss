@@ -1,9 +1,9 @@
 .card {
   display: grid;
-  grid-template-rows: 24em 12em;
+  grid-template-rows: 2fr 1fr;
   position: relative;
   width: 22em !important;
-  height: 36em !important;
+  height: auto !important;
   background-color: #f4f4f4 0% 0% no-repeat padding-box;
   border: 1px solid #e6e6e6;
   .discount {
