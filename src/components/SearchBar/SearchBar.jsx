@@ -1,12 +1,23 @@
 import React from 'react'
-import PropTypes from 'prop-types'
+import { useHistory } from 'react-router'
 import './SearchBar.scss'
 import SearchIcon from '../../assets/icons/Icon ionic-ios-search.svg'
+import { useForm } from '../../hooks/useForm/useForm'
 
-const SearchBar = ({ action }) => {
+const SearchBar = () => {
+  const history = useHistory()
+
+  const [values, handleInputChange, reset] = useForm({
+    search: ''
+  })
+
   const handleSubmit = e => {
     e.preventDefault()
-    action()
+    if (values.search.trim().length > 0) {
+      history.push(`/search?q=${values.search}`)
+    }
+
+    reset()
   }
   return (
     <form
@@ -15,16 +26,18 @@ const SearchBar = ({ action }) => {
       }}
       className="a-header__SearchBar"
     >
-      <input type="text" placeholder="Buscar aquí producto" />
+      <input
+        name="search"
+        type="text"
+        placeholder="Buscar aquí producto"
+        value={values.search}
+        onChange={handleInputChange}
+      />
       <button type="submit">
         <SearchIcon className="searchIcon" />
       </button>
     </form>
   )
-}
-
-SearchBar.propTypes = {
-  action: PropTypes.func.isRequired
 }
 
 export default SearchBar
