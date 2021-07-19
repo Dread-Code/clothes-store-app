@@ -1,27 +1,22 @@
 import React, { useState } from 'react'
 import { Switch, Route } from 'react-router-dom'
-import Footer from '../../layouts/Footer'
 import Header from '../../components/Header'
 import Home from '../../layouts/Home'
 import MobileNavbar from '../../components/MobileNavbar'
 import Navbar from '../../components/Navbar'
 import MobileNavbarContext from '../../context/MobileNavbarContext'
-import Accesories from '../../layouts/Accesories'
-import Child from '../../layouts/Child'
-import Junior from '../../layouts/Junior'
-import Men from '../../layouts/Men'
-import Offers from '../../layouts/Offers'
+import Categories from '../../layouts/Categories'
+import Footer from '../../layouts/Footer'
 import Search from '../../layouts/Search/Search'
-import Women from '../../layouts/Women'
-import getProductos from '../../services/getProducts'
 import './AppRouter.scss'
+import CartShop from '../../layouts/CartShop/CartShop'
 
 const RouterApp = () => {
   const [navBarAction, setNavBarAction] = useState(false)
   const handlerClick = () => {
     setNavBarAction(!navBarAction)
-    getProductos()
   }
+  const array = ['accesories', 'child', 'man', 'woman', 'junior', 'offers']
   return (
     <>
       <MobileNavbarContext.Provider value={{ navBarAction, setNavBarAction }}>
@@ -33,13 +28,11 @@ const RouterApp = () => {
         <div className="container">
           <div>
             <Switch>
-              <Route path="/accesories" component={Accesories} />
-              <Route path="/child" component={Child} />
-              <Route path="/men" component={Men} />
-              <Route path="/men" component={Women} />
-              <Route path="/junior" component={Junior} />
-              <Route path="/offers" component={Offers} />
+              {array.map(category => (
+                <Route path={`/${category}`} component={Categories} key={category} />
+              ))}
               <Route path="/search" component={Search} />
+              <Route path="/cartshop" component={CartShop} />
               <Route path="/" component={Home} />
             </Switch>
           </div>
