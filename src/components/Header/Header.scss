@@ -32,6 +32,7 @@
 @media (max-width: 580px) {
   .header {
     display: grid;
+    height: auto;
     grid-template-columns: 4em 17em 6em;
     grid-template-rows: auto auto;
     grid-template-areas:
