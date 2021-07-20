@@ -1,6 +1,6 @@
 # Clothesstore App
 
-<img src="https://user-images.githubusercontent.com/60331479/126299244-79774dd2-9f22-4962-baca-ebfacf4cc91f.png" styles="color:white"/>
+<img src="https://user-images.githubusercontent.com/60331479/126301247-74efb0f7-989b-4991-90ba-6319e2e212c0.png"/>
 
 ## Getting Starter
 
