@@ -34,23 +34,21 @@
 @media (max-width: 580px) {
   .header {
     height: auto;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 18vw 49vw 14vw;
     grid-template-rows: auto auto;
     grid-template-areas:
       'hamburger icon cart'
       'search search search';
     justify-content: center;
-    grid-gap: 2vh 0;
-    padding: 0 1vh 0 1vh;
+    grid-gap: 1vh 3vh;
 
     .hamburger-menu {
-      justify-self: end;
-      align-self: center;
+      justify-self: center;
+      align-self: end;
       display: unset;
       grid-area: hamburger;
-      font-size: 6vh;
-      height: 3vh;
-      width: 10vh;
+      font-size: 5vh;
+      height: 5vh;
       &:focus {
         outline: none !important;
       }
@@ -83,21 +81,14 @@
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .header {
-    grid-template-columns: 24vw 41vw 31vw !important;
+    grid-template-columns: 20vw 44vw 36vw !important;
     width: 100%;
     // grid-gap: 3vw;
     img {
       width: 17vw !important;
     }
     .buttons-container {
-      // width: 0 !important;
       justify-self: center;
-      .userIcon {
-        // display: none;
-      }
-      .a-core__button-secondary {
-        // display: none;
-      }
     }
   }
 }
@@ -113,6 +104,7 @@
       'icon  cart'
       'search  search';
     justify-items: center;
+    padding: 2vw 0 2vh 0;
     .icon {
       grid-area: icon;
       width: 39vw !important;
