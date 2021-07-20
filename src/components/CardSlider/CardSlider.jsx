@@ -4,6 +4,7 @@ import SwiperCore, { Pagination } from 'swiper/core'
 import Card from '../Card/Card'
 import './styles.scss'
 import getProductos from '../../services/getProducts/getProducts'
+import { offlineSliderData } from '../../utils/offlineSliderData'
 
 SwiperCore.use([Pagination])
 
@@ -12,8 +13,9 @@ export default function CardSlider() {
 
   useEffect(async () => {
     const result = await getProductos()
-    setData(result)
+    setData(result || offlineSliderData)
   }, [])
+
   return (
     <>
       <Swiper
