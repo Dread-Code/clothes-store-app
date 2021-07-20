@@ -56,3 +56,12 @@
     }
   }
 }
+
+@media screen and (min-width: 580px) and (max-width: 992px) {
+  .a-header__SearchBar {
+    justify-self: center;
+    input {
+      width: 80vw;
+    }
+  }
+}
