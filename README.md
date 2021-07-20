@@ -2,6 +2,9 @@
 
 <img src="https://user-images.githubusercontent.com/60331479/126301247-74efb0f7-989b-4991-90ba-6319e2e212c0.png"/>
 
+
+#### You could see how the page looks like in https://clothes-store-app.vercel.app/#/ but remember, you need de json server to see all the functionality.
+
 ## Getting Starter
 
 `npm install`
@@ -20,6 +23,12 @@ Whit this command you could generate the bundle of webpack `npm run build`
 * React router
 * Redux
 * Webpack
+
+## Best practices
+* Prettier
+* eslint
+
+## Deploy
 * Vercel
 
 ## Main Dependencies
