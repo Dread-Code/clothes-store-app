@@ -13,7 +13,7 @@
 
       h4 {
         margin: 1em 1em 1em 0 !important;
-        font-size: 2em;
+        font-size: 3vh;
         margin: 0.7em;
       }
       ul {
@@ -24,11 +24,10 @@
         }
       }
       &.social {
-        width: 20em;
         .icons {
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: space-around;
         }
       }
     }
@@ -55,30 +54,28 @@
   .footer-container {
     width: 100vw;
     .information-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(3, 1fr);
-      justify-self: start;
-      margin-left: 25%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 10%;
       div {
         justify-self: start;
-        &.social {
-          width: 20em;
-          .icons {
-            display: flex;
-            align-items: center;
-            justify-content: space-around;
+        ul {
+          li {
+            display: none;
           }
+        }
+        &.social {
+          width: 80vw;
         }
       }
     }
     .copyrigth-container {
-      height: 3em;
+      height: 4em;
       hr {
         width: 95%;
       }
       .copyrigth {
-        margin: 0.5em;
-        font-size: 1.2em;
+        font-size: 2vh;
       }
     }
   }

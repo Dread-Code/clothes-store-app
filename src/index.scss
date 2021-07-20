@@ -2,5 +2,10 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  margin-top: 15em;
+  margin-top: 22.5vh;
+}
+@media (max-width: 580px) {
+  body {
+    margin-top: 19vh;
+  }
 }

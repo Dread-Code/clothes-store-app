@@ -3,29 +3,31 @@
 .a-header__SearchBar {
   display: flex;
   input {
-    font-size: 1.6em;
+    font-size: 3vh;
     font-weight: lighter;
     background: #eeeeee;
-    width: 29.2em;
+    width: 40vw;
+    height: 6vh;
     border: none;
 
     &::placeholder {
-      padding-left: 0.8em;
+      padding-left: 1vw;
       font-weight: lighter;
       color: #6b6b6b;
     }
   }
 
   button {
+    height: 6.2vh;
     background: #dedede;
     border: none;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     .searchIcon {
-      padding: 1em 1em;
-      width: 2em;
-      height: 2em;
+      padding: 2vh 2vh;
+      width: 3vh;
+      height: 3vh;
     }
   }
 }
@@ -33,16 +35,15 @@
 @media (max-width: 580px) {
   .a-header__SearchBar {
     input {
-      width: 26.3em;
-      height: 2em;
+      width: 71vw;
       font-size: 1em;
     }
 
     button {
       .searchIcon {
-        padding: 0.2em 0.4em;
-        width: 1em;
-        height: 1em;
+        padding: 0vh 1vh;
+        width: 4vh;
+        height: 4vh;
       }
     }
   }

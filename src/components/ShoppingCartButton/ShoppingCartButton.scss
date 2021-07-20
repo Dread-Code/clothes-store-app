@@ -5,8 +5,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.5em;
-  height: 3.5em;
+  width: 4em;
+  height: 4em;
   button {
     background: none;
     border: none;
@@ -30,6 +30,22 @@
       font-size: 1em;
       font-weight: bold;
       color: $white;
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .a-header__shoppingCartButton {
+    width: 25vw;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    button {
+      svg {
+        width: 2.3em;
+        height: 2.3em;
+      }
     }
   }
 }

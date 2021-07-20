@@ -1,5 +1,5 @@
 import axios from 'axios'
-import { BASE_URL } from '../../constants/servicesConstans'
+import { BASE_URL } from '../../constants/servicesConstants'
 
 const getCategory = async category => {
   try {

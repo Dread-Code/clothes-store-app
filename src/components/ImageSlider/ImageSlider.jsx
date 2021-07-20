@@ -1,11 +1,25 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { MdKeyboardArrowLeft, MdKeyboardArrowRight } from 'react-icons/md'
-import PropTypes from 'prop-types'
 import './ImageSlider.scss'
+import { sliderDataMobile } from '../../utils/sliderDataMobile/sliderDataMobile'
+import { sliderData } from '../../utils/sliderData'
+import useWindowDimensions from '../../hooks/useWindowDimensions/useWindowDimensions'
 
-const ImageSlider = ({ slides }) => {
+const ImageSlider = () => {
   const [current, setCurrent] = useState(0)
-  const { length } = slides
+
+  // code for change slide
+  const { width } = useWindowDimensions()
+  const [sliderUrls, setSliderUrls] = useState([])
+  const { length } = sliderUrls
+
+  useEffect(() => {
+    if (width < 600) {
+      setSliderUrls(sliderDataMobile)
+    } else {
+      setSliderUrls(sliderData)
+    }
+  }, [width])
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1)
@@ -15,7 +29,7 @@ const ImageSlider = ({ slides }) => {
     setCurrent(current === 0 ? length - 1 : current - 1)
   }
 
-  if (!Array.isArray(slides) || slides.length <= 0) {
+  if (!Array.isArray(sliderUrls) || sliderUrls.length <= 0) {
     return null
   }
   return (
@@ -23,16 +37,13 @@ const ImageSlider = ({ slides }) => {
       <MdKeyboardArrowLeft className="left-arrow" onClick={prevSlide} />
       <MdKeyboardArrowRight className="right-arrow" onClick={nextSlide} />
 
-      {slides.map((slide, index) => (
+      {sliderUrls.map((slide, index) => (
         <div className={index === current ? 'slide active' : 'slide'} key={`${slide + index}`}>
           {index === current && <img src={slide.image} key={`${slide + index}`} alt={`${slide}`} />}
         </div>
       ))}
     </section>
   )
-}
-ImageSlider.propTypes = {
-  slides: PropTypes.arrayOf(PropTypes.oneOfType([PropTypes.object])).isRequired
 }
 
 export default ImageSlider
