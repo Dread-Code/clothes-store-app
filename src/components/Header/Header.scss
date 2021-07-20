@@ -83,13 +83,14 @@
 }
 @media screen and (min-width: 992px) and (max-width: 1200px) {
   .header {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    .icon {
-      grid-area: icon;
+    grid-template-columns: 30vw 45vw 15vw !important;
+    grid-gap: 3vw;
+    img {
+      width: 28vw !important;
     }
     .buttons-container {
-      grid-area: cart;
+      width: 0 !important;
+      justify-self: center;
       .userIcon {
         display: none;
       }

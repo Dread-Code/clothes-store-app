@@ -49,3 +49,14 @@
     }
   }
 }
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .header__shoppingCartButton {
+    button {
+      svg {
+        width: 4em;
+        height: 4em;
+      }
+    }
+  }
+}
