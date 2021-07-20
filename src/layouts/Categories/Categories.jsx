@@ -9,17 +9,20 @@ import './Categories.scss'
 const Categories = () => {
   const { pathname } = useLocation()
   const [products, setProducts] = useState([])
+  const [categoryName, setCategoryName] = useState('')
   const category = pathname.replace('/', '')
 
   useEffect(async () => {
     const result = await getCategory(category)
-    const { shop } = await getProductsByid(result[0].id)
+    const { id, name } = result[0]
+    const { shop } = await getProductsByid(id)
     setProducts(shop)
+    setCategoryName(name)
   }, [pathname])
 
   return (
     <div className="categories-container">
-      <h2 className="categories-tittle">{capitalize(category)}</h2>
+      <h2 className="categories-tittle">{capitalize(categoryName)}</h2>
       <div>
         <GridCard products={products} />
       </div>

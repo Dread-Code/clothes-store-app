@@ -18,7 +18,7 @@ const NavbarLinks = () => (
     </div>
     <div>
       <div className="vertical-line" />
-      <NavLink to="/child">niños</NavLink>
+      <NavLink to="/child">NIños</NavLink>
     </div>
     <div>
       <div className="vertical-line" />
