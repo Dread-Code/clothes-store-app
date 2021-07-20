@@ -7,7 +7,8 @@
 
 ## Getting Starter
 
-`npm install`
+* Start the Json server https://github.com/DreadfulCrazy/Json-server-clothes-store 
+* Clone this repository and run `npm install`
 
 This project is built with webpack for two envioroments.
 
