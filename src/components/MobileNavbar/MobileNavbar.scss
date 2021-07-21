@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: black;
+  background-color: white;
   padding: 1.3em;
   div {
     margin-left: 2em;
@@ -12,7 +12,7 @@
     a {
       font-family: Helvetica, sans-serif;
       font-weight: bold;
-      color: $white;
+      color: $purple;
       font-size: 1.8em;
       text-decoration: none;
     }
@@ -23,8 +23,7 @@
   .mobilenavbar-container {
     flex-direction: column;
     margin-top: 0em;
-    padding: 0;
-    width: 90%;
+    padding: 2vh;
     &.hide {
       display: none !important;
     }
